@@ -178,6 +178,7 @@
     <Compile Include="Autenticacion.aspx.designer.cs">
       <DependentUpon>Autenticacion.aspx</DependentUpon>
     </Compile>
+    <Compile Include="CL_Autenticacion.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
