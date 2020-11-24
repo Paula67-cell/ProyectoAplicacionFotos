@@ -229,6 +229,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Etiquetas\" />
+    <Folder Include="Fotos\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
