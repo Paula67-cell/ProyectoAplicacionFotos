@@ -11,6 +11,8 @@
     <form id="form1" runat="server">
         <div>
         </div>
+        <asp:Panel ID="Panel1" runat="server" BorderStyle="Groove" Height="518px">
+        </asp:Panel>
     </form>
 </body>
 </html>
