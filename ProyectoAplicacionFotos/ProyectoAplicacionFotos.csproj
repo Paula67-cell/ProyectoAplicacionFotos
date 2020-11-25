@@ -106,7 +106,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Imagenes\2.png" />
+    <Content Include="Imagenes\Contraseña.png" />
+    <Content Include="Imagenes\etiqueta.png" />
+    <Content Include="Imagenes\flecha.gif" />
+    <Content Include="Imagenes\gmail.png" />
     <Content Include="Imagenes\login.png" />
+    <Content Include="Imagenes\password.png" />
+    <Content Include="Imagenes\photo.png" />
+    <Content Include="Imagenes\Registro.jpg" />
+    <Content Include="Imagenes\Registro2.jpg" />
     <Content Include="Imagenes\user.png" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -126,6 +135,8 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="WEBForms\Etiquetas.aspx" />
+    <Content Include="WEBForms\RegistroFotos.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="WEBForms\Autenticacion.aspx" />
     <Content Include="WEBForms\Registro.aspx" />
@@ -200,6 +211,13 @@
     <Compile Include="WEBForms\Autenticacion.aspx.designer.cs">
       <DependentUpon>Autenticacion.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WEBForms\Etiquetas.aspx.cs">
+      <DependentUpon>Etiquetas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEBForms\Etiquetas.aspx.designer.cs">
+      <DependentUpon>Etiquetas.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WEBForms\Registro.aspx.cs">
       <DependentUpon>Registro.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -227,6 +245,13 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WEBForms\RegistroFotos.aspx.cs">
+      <DependentUpon>RegistroFotos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEBForms\RegistroFotos.aspx.designer.cs">
+      <DependentUpon>RegistroFotos.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

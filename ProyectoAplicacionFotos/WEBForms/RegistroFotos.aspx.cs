@@ -5,18 +5,18 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace ProyectoAplicacionFotos
+namespace ProyectoAplicacionFotos.WEBForms
 {
-    public partial class Registro : System.Web.UI.Page
+    public partial class RegistroFotos : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void Button2_Click(object sender, EventArgs e)
+        protected void Button6_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Autenticacion.aspx");
+            Response.Redirect("Etiquetas.aspx");
         }
     }
 }
