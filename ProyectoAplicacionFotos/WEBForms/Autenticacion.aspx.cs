@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace ProyectoAplicacionFotos
+namespace ProyectoAplicacionFotos.WEBForms
 {
     public partial class Autenticacion : System.Web.UI.Page
     {

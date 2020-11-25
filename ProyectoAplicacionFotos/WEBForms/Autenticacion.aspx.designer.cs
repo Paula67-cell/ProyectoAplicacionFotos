@@ -7,7 +7,7 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace ProyectoAplicacionFotos
+namespace ProyectoAplicacionFotos.WEBForms
 {
 
 
