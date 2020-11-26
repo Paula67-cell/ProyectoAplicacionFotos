@@ -67,7 +67,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style11" style="font-family: 'Arial Narrow'; font-size: 16px">
-                        <asp:Button ID="BTNRegistrar" runat="server" BorderColor="#FF0066" BorderStyle="Inset" CssClass="auto-style10" Text="Registrar" Width="115px" />
+                        <asp:Button ID="BTNRegistrar" runat="server" BorderColor="#FF0066" BorderStyle="Inset" CssClass="auto-style10" Text="Registrar" Width="115px" OnClick="BTNRegistrar_Click" />
                     </td>
                     <td class="auto-style12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
                 </tr>
