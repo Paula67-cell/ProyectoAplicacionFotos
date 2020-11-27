@@ -118,6 +118,9 @@
         .auto-style53 {
             margin-left: 86px;
         }
+        .auto-style54 {
+            margin-top: 0px;
+        }
     </style>
 </head>
 <body>
@@ -177,7 +180,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style50" colspan="5">
-                        <asp:GridView ID="GridView1" runat="server" Width="977px" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+                        <asp:GridView ID="GridView2" runat="server" Width="975px" BorderColor="#FF0066" BorderStyle="Double" CssClass="auto-style54" Height="119px">
                         </asp:GridView>
                     </td>
                 </tr>

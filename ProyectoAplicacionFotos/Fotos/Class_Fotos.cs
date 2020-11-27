@@ -11,7 +11,7 @@ namespace ProyectoAplicacionFotos.Fotos
     public class Class_Fotos : Conexion
     {
         private DataTable dataTable = new DataTable();
-        public DataTable Mostrar_Fotos(int pID, String pURL, String pNombreArchivo, String pTipoArchivo, int pTamaño, String pResolucion, String pTipoFoto) //
+        public DataTable Mostrar_Fotos() //
         {
             try
             {
@@ -25,14 +25,14 @@ namespace ProyectoAplicacionFotos.Fotos
                 //coneccion.CommandType = System.Data.CommandType.StoredProcedure;
                 coneccion.CommandType = CommandType.StoredProcedure;
                 coneccion.CommandText = "MostrarFotos";
-                coneccion.CommandTimeout = 10;
-                coneccion.Parameters.AddWithValue("@ID", pID);
-                coneccion.Parameters.AddWithValue("@URL", pURL);
-                coneccion.Parameters.AddWithValue("@NombreArchivo", pNombreArchivo);
-                coneccion.Parameters.AddWithValue("@TipoArchivo", pTipoArchivo);
-                coneccion.Parameters.AddWithValue("@Tamaño", pTamaño);
-                coneccion.Parameters.AddWithValue("@Resolucion", pResolucion);
-                coneccion.Parameters.AddWithValue("@TipoFoto", pTipoFoto);
+                //coneccion.CommandTimeout = 10;
+                //coneccion.Parameters.AddWithValue("@ID", pID);
+                //coneccion.Parameters.AddWithValue("@URL", pURL);
+                //coneccion.Parameters.AddWithValue("@NombreArchivo", pNombreArchivo);
+                //coneccion.Parameters.AddWithValue("@TipoArchivo", pTipoArchivo);
+                //coneccion.Parameters.AddWithValue("@Tamaño", pTamaño);
+                //coneccion.Parameters.AddWithValue("@Resolucion", pResolucion);
+                //coneccion.Parameters.AddWithValue("@TipoFoto", pTipoFoto);
                 adapter = new SqlDataAdapter(coneccion);
                 adapter.Fill(dataTable);
                 conectado.Close();
@@ -90,7 +90,7 @@ namespace ProyectoAplicacionFotos.Fotos
                 coneccion.CommandType = CommandType.StoredProcedure;
                 coneccion.CommandText = "EliminarFotos"; //Nombre de Nuestro Procedimiento Almacenado
                 coneccion.CommandTimeout = 10;
-                coneccion.Parameters.AddWithValue("@ID", pID);
+                coneccion.Parameters.AddWithValue("@id_fotos", pID);
                 coneccion.ExecuteNonQuery();
                 conectado.Close();
                 return true;

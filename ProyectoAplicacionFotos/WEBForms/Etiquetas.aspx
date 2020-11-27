@@ -107,6 +107,13 @@
                     <td class="auto-style42" style="font-family: 'Arial Narrow'; font-size: 16px; font-style: oblique; background-color: #FF99FF;"> </td>
                 </tr>
                 <tr>
+                    <td class="auto-style40" style="font-family: 'Arial Narrow'; font-size: 16px; font-style: oblique; background-color: #FF99FF;">Codigo Etiqueta</td>
+                    <td class="auto-style41" style="font-family: 'Arial Narrow'; font-size: 16px; font-style: oblique; background-color: #FF66FF;">
+                        <asp:TextBox ID="TXTCodigoEtiqueta" runat="server" BorderColor="#FF3399" BorderStyle="Double" CssClass="auto-style9" Width="167px"></asp:TextBox>
+                    </td>
+                    <td class="auto-style42" style="font-family: 'Arial Narrow'; font-size: 16px; font-style: oblique; background-color: #FF99FF;">&nbsp;</td>
+                </tr>
+                <tr>
                     <td class="auto-style16" style="font-family: 'Arial Narrow'; font-size: 16px; font-style: oblique; background-color: #FF99FF;">&nbsp;&nbsp;&nbsp; Nombre Etiquetas</td>
                     <td class="auto-style23" style="font-family: 'Arial Narrow'; font-size: 16px; font-style: oblique; background-color: #FF99FF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cantidad de Fotos</td>
                     <td class="auto-style18" style="font-family: 'Arial Narrow'; font-size: 16px; font-style: oblique; background-color: #FF99FF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
