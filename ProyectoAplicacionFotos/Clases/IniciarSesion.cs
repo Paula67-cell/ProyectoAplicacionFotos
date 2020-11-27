@@ -2,23 +2,21 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Windows;
 
-namespace ProyectoAplicacionFotos
+namespace ProyectoAplicacionFotos.Clases
 {
-    
-    public class CL_Autenticacion : Conexion
+    public class IniciarSesion : Conexion 
 
     {
         private DataTable dataTable = new DataTable();
 
         DataSet ds = new DataSet();
-        public Boolean  Usuario(string pNombreUsuario, string pPassword, string pEmail)
+        public Boolean Usuario(string pNombreUsuario, string pPassword, string pEmail)
         {
-           Boolean vBandera = false;
+            Boolean vBandera = false;
             try
             {
                 SqlDataAdapter adapter;
@@ -35,7 +33,6 @@ namespace ProyectoAplicacionFotos
                 coneccion.Parameters.AddWithValue("@NombreUsuario", pNombreUsuario);
                 coneccion.Parameters.AddWithValue("@Password", pPassword);
                 coneccion.Parameters.AddWithValue("@Email", pEmail);
-              
                 adapter = new SqlDataAdapter(coneccion);
                 adapter.Fill(dataTable);
 
@@ -63,13 +60,11 @@ namespace ProyectoAplicacionFotos
 
             return true;
         }
-       
-        
 
-        }
-            
+
+
     }
 
 
-    
-    
+
+}

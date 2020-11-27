@@ -140,7 +140,6 @@
     <Content Include="WEBForms\RegistroFotos.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="WEBForms\Autenticacion.aspx" />
-    <Content Include="WEBForms\Registro.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -188,7 +187,7 @@
     <Compile Include="Clases\ClassFotos.cs" />
     <Compile Include="Clases\CL_Autenticacion.cs" />
     <Compile Include="Clases\Conexion.cs" />
-    <Compile Include="Clases\LoginAutenticar.cs" />
+    <Compile Include="Clases\IniciarSesion.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -220,13 +219,6 @@
     </Compile>
     <Compile Include="WEBForms\Etiquetas.aspx.designer.cs">
       <DependentUpon>Etiquetas.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WEBForms\Registro.aspx.cs">
-      <DependentUpon>Registro.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WEBForms\Registro.aspx.designer.cs">
-      <DependentUpon>Registro.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
