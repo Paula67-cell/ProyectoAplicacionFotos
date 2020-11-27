@@ -36,7 +36,6 @@ namespace ProyectoAplicacionFotos.WEBForms
             else
             {
                 MessageBox.Show("No puede guardar espacios en blanco");
-
             }
            
         }
