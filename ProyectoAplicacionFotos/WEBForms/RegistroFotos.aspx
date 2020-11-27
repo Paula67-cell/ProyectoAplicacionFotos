@@ -128,7 +128,7 @@
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style11" colspan="2" style="font-family: 'Arial Narrow'; font-size: 16px; font-style: oblique; background-color: #FF99FF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ID</td>
-                    <td class="auto-style12" colspan="2" style="font-family: 'Arial Narrow'; font-size: 16px; font-style: oblique; background-color: #FF99FF;">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:TextBox ID="TXTID" runat="server" BorderColor="#FF0066" BorderStyle="Double" CssClass="auto-style53" Width="174px"></asp:TextBox>
+                    <td class="auto-style12" colspan="2" style="font-family: 'Arial Narrow'; font-size: 16px; font-style: oblique; background-color: #FF99FF;">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:TextBox ID="TxtId" runat="server" BorderColor="#FF0066" BorderStyle="Double" CssClass="auto-style53" Width="174px"></asp:TextBox>
                     </td>
                     <td class="auto-style24" style="font-family: 'Arial Narrow'; font-size: 16px; font-style: oblique; background-color: #FF99FF;">&nbsp;</td>
                 </tr>
@@ -139,13 +139,13 @@
                 </tr>
                 <tr>
                     <td class="auto-style25" colspan="2">
-                        <asp:TextBox ID="TextBox2" runat="server" BorderColor="#FF0066" BorderStyle="Double" CssClass="auto-style13" Width="241px"></asp:TextBox>
+                        <asp:TextBox ID="TxtURL" runat="server" BorderColor="#FF0066" BorderStyle="Double" CssClass="auto-style13" Width="241px"></asp:TextBox>
                     </td>
                     <td class="auto-style26" colspan="2">
-                        <asp:TextBox ID="TextBox1" runat="server" BorderColor="#FF0066" BorderStyle="Double" CssClass="auto-style6" Width="174px"></asp:TextBox>
+                        <asp:TextBox ID="TxtNombre" runat="server" BorderColor="#FF0066" BorderStyle="Double" CssClass="auto-style6" Width="174px"></asp:TextBox>
                     </td>
                     <td class="auto-style27">
-                        <asp:TextBox ID="TextBox3" runat="server" BorderColor="#FF0066" BorderStyle="Double" CssClass="auto-style5" Width="187px"></asp:TextBox>
+                        <asp:TextBox ID="TxtTipo" runat="server" BorderColor="#FF0066" BorderStyle="Double" CssClass="auto-style5" Width="187px"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -155,35 +155,35 @@
                 </tr>
                 <tr>
                     <td class="auto-style43" colspan="2">
-                        <asp:TextBox ID="TextBox4" runat="server" BorderColor="#FF0066" BorderStyle="Double" CssClass="auto-style9" Width="156px"></asp:TextBox>
+                        <asp:TextBox ID="TxtTamaño" runat="server" BorderColor="#FF0066" BorderStyle="Double" CssClass="auto-style9" Width="156px"></asp:TextBox>
                     </td>
                     <td class="auto-style44" colspan="2">
-                        <asp:TextBox ID="TextBox5" runat="server" BorderColor="#FF0066" BorderStyle="Double" CssClass="auto-style8" Width="178px"></asp:TextBox>
+                        <asp:TextBox ID="TxtResolucion" runat="server" BorderColor="#FF0066" BorderStyle="Double" CssClass="auto-style8" Width="178px"></asp:TextBox>
                     </td>
                     <td class="auto-style45">
-                        <asp:TextBox ID="TextBox6" runat="server" BorderColor="#FF0066" CssClass="auto-style7" Width="151px"></asp:TextBox>
+                        <asp:TextBox ID="TxtTipoFoto" runat="server" BorderColor="#FF0066" CssClass="auto-style7" Width="151px"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style40" colspan="2">
-                        <asp:Button ID="Button2" runat="server" BorderColor="#FF0066" BorderStyle="Inset" CssClass="auto-style36" Text="Agregar" Width="115px" />
+                        <asp:Button ID="BtnAgregar" runat="server" BorderColor="#FF0066" BorderStyle="Inset" CssClass="auto-style36" Text="Agregar" Width="115px" OnClick="Button2_Click" />
                     </td>
                     <td class="auto-style41" colspan="2">
-                        <asp:Button ID="Button3" runat="server" BorderColor="#FF0066" BorderStyle="Inset" CssClass="auto-style35" Text="Actualizar" Width="135px" />
+                        <asp:Button ID="BtnActualizar" runat="server" BorderColor="#FF0066" BorderStyle="Inset" CssClass="auto-style35" Text="Actualizar" Width="135px" OnClick="BtnActualizar_Click" />
                     </td>
                     <td class="auto-style42">
-                        <asp:Button ID="Button4" runat="server" BorderColor="#FF0066" BorderStyle="Inset" CssClass="auto-style34" Text="Eliminar" Width="100px" />
+                        <asp:Button ID="BtnEliminar" runat="server" BorderColor="#FF0066" BorderStyle="Inset" CssClass="auto-style34" Text="Eliminar" Width="100px" OnClick="BtnEliminar_Click" />
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style50" colspan="5">
-                        <asp:GridView ID="GridView1" runat="server" Width="977px">
+                        <asp:GridView ID="GridView1" runat="server" Width="977px" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
                         </asp:GridView>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style51">
-                        <asp:Button ID="Button5" runat="server" BorderColor="#FF0066" BorderStyle="Inset" CssClass="auto-style39" Text="Mostrar" Width="100px" />
+                        <asp:Button ID="BtnMostrar" runat="server" BorderColor="#FF0066" BorderStyle="Inset" CssClass="auto-style39" Text="Mostrar" Width="100px" OnClick="BtnMostrar_Click" />
                     </td>
                     <td class="auto-style49" colspan="2"></td>
                     <td class="auto-style51"></td>

@@ -8,7 +8,7 @@ namespace ProyectoAplicacionFotos
 {
     public class Conexion
     {
-        public String coneccion = "Data Source=LAPTOP-JQ6UM2LL\\SQLEXPRESS;Initial Catalog=ArchivosFotos;Integrated Security=True";
+        public String coneccion = "Data Source=DESKTOP-PPP3N8C\\SQLEXPRESS;Initial Catalog=ArchivoFotos;Integrated Security=True";
 
         public Boolean Conectando()
         {
