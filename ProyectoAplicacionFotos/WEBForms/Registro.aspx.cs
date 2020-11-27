@@ -25,12 +25,14 @@ namespace ProyectoAplicacionFotos
             CL_Autenticacion usuario = new CL_Autenticacion();
             if (usuario.Usuario(this.TxtUsuario.Text, this.TXTContraseña.Text, this.TxtCorreo.Text))
             {
-                MessageBox.Show("Error al registro");
+              
+                MessageBox.Show("Pudo accesar");
+                Response.Redirect("Autenticacion.aspx");
 
             }
             else
             {
-                 MessageBox.Show("Datos Guardados");
+                MessageBox.Show("Error al registro");
             }
         }
     }
