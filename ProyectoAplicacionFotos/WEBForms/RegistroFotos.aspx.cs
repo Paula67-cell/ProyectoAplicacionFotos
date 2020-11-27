@@ -57,10 +57,6 @@ namespace ProyectoAplicacionFotos.WEBForms
             GridView2.DataBind();
         }
 
-        //protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
-        //{
-        //    GridView1.DataSource = cCLS_Fotos.Mostrar_Fotos(Convert.ToInt32(TxtId.Text), TxtURL.Text, TxtNombre.Text, TxtTipo.Text, Convert.ToInt32(TxtTamaño.Text), TxtResolucion.Text, TxtTipoFoto.Text);
-        //    GridView1.DataBind();
-        //}
+        
     }
 }
