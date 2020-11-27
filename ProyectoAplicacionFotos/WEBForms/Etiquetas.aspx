@@ -162,6 +162,7 @@
                 </tr>
                 <tr>
                     <td colspan="3">
+                        <asp:Button ID="Mostrar" runat="server" BorderColor="#FF0066" BorderStyle="Double" CssClass="auto-style10" Text="Mostrar" Width="109px" />
                         <asp:Image ID="Image2" runat="server" CssClass="auto-style39" Height="147px" ImageUrl="~/Imagenes/etiqueta.png" Width="170px" />
                     </td>
                 </tr>

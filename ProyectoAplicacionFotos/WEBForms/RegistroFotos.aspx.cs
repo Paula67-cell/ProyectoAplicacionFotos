@@ -24,29 +24,54 @@ namespace ProyectoAplicacionFotos.WEBForms
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            //Class_Fotos cCLS_Fotos = new Class_Fotos();
-            if (cCLS_Fotos.Agregar_Fotos(Convert.ToInt32(TxtId.Text), TxtURL.Text, TxtNombre.Text, TxtTipo.Text, Convert.ToInt32(TxtTamaño.Text), TxtResolucion.Text, TxtTipoFoto.Text))
+            
+            if (TxtId.Text .Length > 0 && TxtURL.Text.Length > 0 && TxtNombre.Text.Length >0 && TxtTipo.Text.Length > 0 && TxtTamaño.Text.Length >0 && TxtResolucion.Text.Length >0  && TxtTipoFoto.Text.Length >0)
             {
-                MessageBox.Show("Registro Agregado con Exito", "Agregado");
+                if (cCLS_Fotos.Agregar_Fotos(Convert.ToInt32(TxtId.Text), TxtURL.Text, TxtNombre.Text, TxtTipo.Text, Convert.ToInt32(TxtTamaño.Text), TxtResolucion.Text, TxtTipoFoto.Text))
+                {
+                    MessageBox.Show("Registro Agregado con Exito", "Agregado");
+                }
+
             }
+            else
+            {
+                MessageBox.Show("No puede guardar espacios en blanco");
+            }
+           
         }
 
         protected void BtnActualizar_Click(object sender, EventArgs e)
         {
-            // Class_Fotos cCLS_Fotos = new Class_Fotos();
-            if (cCLS_Fotos.Modificar_Foto(Convert.ToInt32(TxtId.Text), TxtURL.Text, TxtNombre.Text, TxtTipo.Text, Convert.ToInt32(TxtTamaño.Text), TxtResolucion.Text, TxtTipoFoto.Text))
+            if (TxtId.Text.Length > 0 && TxtURL.Text.Length > 0 && TxtNombre.Text.Length > 0 && TxtTipo.Text.Length > 0 && TxtTamaño.Text.Length > 0 && TxtResolucion.Text.Length > 0 && TxtTipoFoto.Text.Length > 0)
             {
-                MessageBox.Show("Datos Modificados");
+                if (cCLS_Fotos.Modificar_Foto(Convert.ToInt32(TxtId.Text), TxtURL.Text, TxtNombre.Text, TxtTipo.Text, Convert.ToInt32(TxtTamaño.Text), TxtResolucion.Text, TxtTipoFoto.Text))
+                {
+                    MessageBox.Show("Datos Modificados");
+                }
             }
+            else
+            {
+                MessageBox.Show("No puede guardar espacios en blanco");
+            }
+
+           
         }
 
         protected void BtnEliminar_Click(object sender, EventArgs e)
         {
-            //Class_Fotos cCLS_Fotos = new Class_Fotos();
-            if (cCLS_Fotos.Eliminar_Fotos(Convert.ToInt32(TxtId.Text)))
+            if (TxtId.Text.Length > 0 && TxtURL.Text.Length > 0 && TxtNombre.Text.Length > 0 && TxtTipo.Text.Length > 0 && TxtTamaño.Text.Length > 0 && TxtResolucion.Text.Length > 0 && TxtTipoFoto.Text.Length > 0)
             {
-                MessageBox.Show("Datos Eliminados");
+                if (cCLS_Fotos.Eliminar_Fotos(Convert.ToInt32(TxtId.Text)))
+                {
+                    MessageBox.Show("Datos Eliminados");
+                }
             }
+            else
+            {
+                MessageBox.Show("No puede guardar espacios en blanco");
+            }
+
+            
         }
 
 
