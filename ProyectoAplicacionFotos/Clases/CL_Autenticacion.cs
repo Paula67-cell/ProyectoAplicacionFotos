@@ -62,7 +62,7 @@ namespace ProyectoAplicacionFotos
             }
             catch (Exception Ex)
             {
-                MessageBox.Show("Esa ceunta ya existe");
+                MessageBox.Show("Esa cuenta ya existe");
             }
 
             return true;

@@ -85,13 +85,19 @@
         .auto-style42 {
             height: 39px;
         }
+        .auto-style43 {
+            margin-left: 209px;
+        }
+        .auto-style46 {
+            height: 144px;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
         </div>
-        <asp:Panel ID="Panel1" runat="server" BackColor="#FFCCFF" BorderColor="#FF0066" BorderStyle="Inset" Height="628px">
+        <asp:Panel ID="Panel1" runat="server" BackColor="#FFCCFF" BorderColor="#FF0066" BorderStyle="Inset" Height="820px">
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style40" style="font-family: 'Arial Narrow'; font-size: 16px; font-style: oblique; background-color: #FF99FF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ID</td>
@@ -134,14 +140,22 @@
                     <td class="auto-style30">
                         <asp:Button ID="Button1" runat="server" BorderColor="#FF0066" BorderStyle="Inset" Text="Registrar" Width="119px" />
                     </td>
-                    <td class="auto-style31"></td>
+                    <td class="auto-style31">
+                        <asp:Button ID="Button3" runat="server" BorderColor="#FF0066" BorderStyle="Double" CssClass="auto-style43" Text="Eliminar" Width="140px" />
+                    </td>
                     <td class="auto-style32">
                         <asp:Button ID="Button2" runat="server" BorderColor="#FF0066" BorderStyle="Inset" CssClass="auto-style26" Text="Actualizar" Width="118px" />
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style32" colspan="3">
-                        <asp:Image ID="Image2" runat="server" CssClass="auto-style39" ImageUrl="~/Imagenes/etiqueta.png" Width="170px" Height="147px" />
+                    <td class="auto-style46" colspan="3">
+                        <asp:GridView ID="GridView1" runat="server" BorderColor="#FF0066" BorderStyle="Double" Height="131px" Width="1088px">
+                        </asp:GridView>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <asp:Image ID="Image2" runat="server" CssClass="auto-style39" Height="147px" ImageUrl="~/Imagenes/etiqueta.png" Width="170px" />
                     </td>
                 </tr>
             </table>
