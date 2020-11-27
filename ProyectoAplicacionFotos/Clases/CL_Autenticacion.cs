@@ -39,6 +39,7 @@ namespace ProyectoAplicacionFotos
                 adapter = new SqlDataAdapter(coneccion);
                 adapter.Fill(dataTable);
 
+
                 if (dataTable.Rows.Count > 0)
                 {
                     if (dataTable.Rows[0][1].ToString().Equals(pNombreUsuario) && dataTable.Rows[0][2].ToString().Equals(pPassword) && dataTable.Rows[0][3].ToString().Equals(pEmail))
@@ -54,11 +55,14 @@ namespace ProyectoAplicacionFotos
 
                 conectado.Close();
 
+            
+               
+
 
             }
             catch (Exception Ex)
             {
-                MessageBox.Show("Error");
+                MessageBox.Show("Esa ceunta ya existe");
             }
 
             return true;

@@ -187,7 +187,6 @@
     <Compile Include="Clases\ClassFotos.cs" />
     <Compile Include="Clases\CL_Autenticacion.cs" />
     <Compile Include="Clases\Conexion.cs" />
-    <Compile Include="Clases\IniciarSesion.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
