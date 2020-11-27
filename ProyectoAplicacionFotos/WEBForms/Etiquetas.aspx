@@ -29,7 +29,7 @@
             height: 16px;
         }
         .auto-style22 {
-            margin-left: 29px;
+            margin-left: 126px;
         }
         .auto-style23 {
             width: 660px;
@@ -74,6 +74,17 @@
         .auto-style39 {
             margin-left: 562px;
         }
+        .auto-style40 {
+            width: 485px;
+            height: 39px;
+        }
+        .auto-style41 {
+            width: 660px;
+            height: 39px;
+        }
+        .auto-style42 {
+            height: 39px;
+        }
     </style>
 </head>
 <body>
@@ -83,11 +94,18 @@
         <asp:Panel ID="Panel1" runat="server" BackColor="#FFCCFF" BorderColor="#FF0066" BorderStyle="Inset" Height="628px">
             <table class="auto-style1">
                 <tr>
+                    <td class="auto-style40" style="font-family: 'Arial Narrow'; font-size: 16px; font-style: oblique; background-color: #FF99FF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ID</td>
+                    <td class="auto-style41" style="font-family: 'Arial Narrow'; font-size: 16px; font-style: oblique; background-color: #FF66FF;">
+                        <asp:TextBox ID="TextBox6" runat="server" BorderColor="#FF3399" BorderStyle="Double" CssClass="auto-style9" Width="167px"></asp:TextBox>
+                    </td>
+                    <td class="auto-style42" style="font-family: 'Arial Narrow'; font-size: 16px; font-style: oblique; background-color: #FF99FF;"> </td>
+                </tr>
+                <tr>
                     <td class="auto-style16" style="font-family: 'Arial Narrow'; font-size: 16px; font-style: oblique; background-color: #FF99FF;">&nbsp;&nbsp;&nbsp; Nombre Etiquetas</td>
-                    <td class="auto-style23" style="font-family: 'Arial Narrow'; font-size: 16px; font-style: oblique; background-color: #FF99FF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cantidad de Fotos</td>
+                    <td class="auto-style23" style="font-family: 'Arial Narrow'; font-size: 16px; font-style: oblique; background-color: #FF99FF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cantidad de Fotos</td>
                     <td class="auto-style18" style="font-family: 'Arial Narrow'; font-size: 16px; font-style: oblique; background-color: #FF99FF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Usuarios / Sistema<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Usuarios / Sistema<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
                 </tr>
                 <tr>
                     <td class="auto-style36">
@@ -123,7 +141,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style32" colspan="3">
-                        <asp:Image ID="Image2" runat="server" CssClass="auto-style39" ImageUrl="~/Imagenes/etiqueta.png" Width="202px" />
+                        <asp:Image ID="Image2" runat="server" CssClass="auto-style39" ImageUrl="~/Imagenes/etiqueta.png" Width="170px" Height="147px" />
                     </td>
                 </tr>
             </table>

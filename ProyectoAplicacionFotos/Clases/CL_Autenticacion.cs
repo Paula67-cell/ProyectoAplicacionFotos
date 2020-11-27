@@ -16,9 +16,9 @@ namespace ProyectoAplicacionFotos
         private DataTable dataTable = new DataTable();
 
         DataSet ds = new DataSet();
-        public Boolean Usuario(string pNombreUsuario, string pPassword, string pEmail)
+        public Boolean  Usuario(string pNombreUsuario, string pPassword, string pEmail)
         {
-            Boolean vBandera = false;
+           Boolean vBandera = false;
             try
             {
                 SqlDataAdapter adapter;
@@ -29,7 +29,6 @@ namespace ProyectoAplicacionFotos
                 conectado.Open();
                 SqlCommand coneccion = new SqlCommand();
                 coneccion.Connection = conectado;
-                //coneccion.CommandType = System.Data.CommandType.StoredProcedure;
                 coneccion.CommandType = CommandType.StoredProcedure;
                 coneccion.CommandText = "AgregarUsuario";
                 coneccion.CommandTimeout = 10;
@@ -41,7 +40,7 @@ namespace ProyectoAplicacionFotos
 
                 if (dataTable.Rows.Count > 0)
                 {
-                    if (dataTable.Rows[0][0].ToString().Equals(pNombreUsuario) && dataTable.Rows[0][1].ToString().Equals(pPassword) && dataTable.Rows[0][2].ToString().Equals(pEmail))
+                    if (dataTable.Rows[0][1].ToString().Equals(pNombreUsuario) && dataTable.Rows[0][2].ToString().Equals(pPassword) && dataTable.Rows[0][3].ToString().Equals(pEmail))
                     {
                         vBandera = true;
                     }
@@ -58,11 +57,12 @@ namespace ProyectoAplicacionFotos
             }
             catch (Exception Ex)
             {
-                MessageBox.Show(Ex.ToString());
+                MessageBox.Show("Error");
             }
 
-            return vBandera;
+            return true;
         }
+       
         
 
         }

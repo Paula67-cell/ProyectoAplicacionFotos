@@ -115,6 +115,9 @@
         .auto-style52 {
             margin-left: 550px;
         }
+        .auto-style53 {
+            margin-left: 86px;
+        }
     </style>
 </head>
 <body>
@@ -123,6 +126,12 @@
         </div>
         <asp:Panel ID="Panel1" runat="server" BackColor="#FFCCFF" Height="837px">
             <table class="auto-style1">
+                <tr>
+                    <td class="auto-style11" colspan="2" style="font-family: 'Arial Narrow'; font-size: 16px; font-style: oblique; background-color: #FF99FF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ID</td>
+                    <td class="auto-style12" colspan="2" style="font-family: 'Arial Narrow'; font-size: 16px; font-style: oblique; background-color: #FF99FF;">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:TextBox ID="TXTID" runat="server" BorderColor="#FF0066" BorderStyle="Double" CssClass="auto-style53" Width="174px"></asp:TextBox>
+                    </td>
+                    <td class="auto-style24" style="font-family: 'Arial Narrow'; font-size: 16px; font-style: oblique; background-color: #FF99FF;">&nbsp;</td>
+                </tr>
                 <tr>
                     <td class="auto-style11" colspan="2" style="font-family: 'Arial Narrow'; font-size: 16px; font-style: oblique; background-color: #FF99FF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; URL</td>
                     <td class="auto-style12" colspan="2" style="font-family: 'Arial Narrow'; font-size: 16px; font-style: oblique; background-color: #FF99FF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nombre del Archivo</td>
