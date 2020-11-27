@@ -59,22 +59,13 @@ namespace ProyectoAplicacionFotos.WEBForms
 
         protected void BtnEliminar_Click(object sender, EventArgs e)
         {
-            if (TxtId.Text.Length > 0 && TxtURL.Text.Length > 0 && TxtNombre.Text.Length > 0 && TxtTipo.Text.Length > 0 && TxtTamaño.Text.Length > 0 && TxtResolucion.Text.Length > 0 && TxtTipoFoto.Text.Length > 0)
+            if (cCLS_Fotos.Eliminar_Fotos(Convert.ToInt32(TxtId.Text)))
             {
-                if (cCLS_Fotos.Eliminar_Fotos(Convert.ToInt32(TxtId.Text)))
-                {
-                    MessageBox.Show("Datos Eliminados");
-                }
-            }
-            else
-            {
-                MessageBox.Show("No puede guardar espacios en blanco");
+                MessageBox.Show("Datos Eliminados");
             }
 
-            
+
         }
-
-
 
         protected void BtnMostrar_Click(object sender, EventArgs e)
         {

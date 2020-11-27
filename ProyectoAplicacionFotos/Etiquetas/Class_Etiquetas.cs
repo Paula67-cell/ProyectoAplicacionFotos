@@ -6,12 +6,12 @@ using System.Linq;
 using System.Web;
 using System.Windows;
 
-namespace ProyectoAplicacionFotos.Fotos
+namespace ProyectoAplicacionFotos.Etiquetas
 {
-    public class Class_Fotos : Conexion
+    public class Class_Etiquetas : Conexion
     {
         private DataTable dataTable = new DataTable();
-        public DataTable Mostrar_Fotos() //
+        public DataTable Mostrar_Etiquetas()
         {
             try
             {
@@ -24,15 +24,7 @@ namespace ProyectoAplicacionFotos.Fotos
                 coneccion.Connection = conectado;
                 //coneccion.CommandType = System.Data.CommandType.StoredProcedure;
                 coneccion.CommandType = CommandType.StoredProcedure;
-                coneccion.CommandText = "MostrarFotos";
-                //coneccion.CommandTimeout = 10;
-                //coneccion.Parameters.AddWithValue("@ID", pID);
-                //coneccion.Parameters.AddWithValue("@URL", pURL);
-                //coneccion.Parameters.AddWithValue("@NombreArchivo", pNombreArchivo);
-                //coneccion.Parameters.AddWithValue("@TipoArchivo", pTipoArchivo);
-                //coneccion.Parameters.AddWithValue("@Tamaño", pTamaño);
-                //coneccion.Parameters.AddWithValue("@Resolucion", pResolucion);
-                //coneccion.Parameters.AddWithValue("@TipoFoto", pTipoFoto);
+                coneccion.CommandText = "MostrarEtiqueta";
                 adapter = new SqlDataAdapter(coneccion);
                 adapter.Fill(dataTable);
                 conectado.Close();
@@ -46,7 +38,7 @@ namespace ProyectoAplicacionFotos.Fotos
         }
 
 
-        public Boolean Modificar_Foto(int pID, String pURL, String pNombreArchivo, String pTipoArchivo, int pTamaño, String pResolucion, String pTipoFoto)
+        public Boolean Modificar_Etiquetas(int pID, String pNombreEtiqueta, String pTotalFotos, String pSugerencias, int pCodigoFotos)
         {
             try
             {
@@ -56,15 +48,12 @@ namespace ProyectoAplicacionFotos.Fotos
                 SqlCommand coneccion = new SqlCommand();
                 coneccion.Connection = conectado;
                 coneccion.CommandType = CommandType.StoredProcedure;
-                coneccion.CommandText = "ModificarFotos"; //Nombre de Nuestro Procedimiento Almacenado
-                coneccion.CommandTimeout = 10;
+                coneccion.CommandText = "ModificarEtiquetas"; //Nombre de Nuestro Procedimiento Almacenado
                 coneccion.Parameters.AddWithValue("@ID", pID);
-                coneccion.Parameters.AddWithValue("@URL", pURL);
-                coneccion.Parameters.AddWithValue("@NombreArchivo", pNombreArchivo);
-                coneccion.Parameters.AddWithValue("@TipoArchivo", pTipoArchivo);
-                coneccion.Parameters.AddWithValue("@Tamaño", pTamaño);
-                coneccion.Parameters.AddWithValue("@Resolucion", pResolucion);
-                coneccion.Parameters.AddWithValue("@TipoFoto", pTipoFoto);
+                coneccion.Parameters.AddWithValue("@NombreEtiqueta", pNombreEtiqueta);
+                coneccion.Parameters.AddWithValue("@TotalFotos", pTotalFotos);
+                coneccion.Parameters.AddWithValue("@Sugerencias", pSugerencias);
+                coneccion.Parameters.AddWithValue("@CodigoFotos", pCodigoFotos); // Ponerlo en el orden suyo en este caso va de segundo
                 coneccion.ExecuteNonQuery();
                 conectado.Close();
                 return true;
@@ -78,7 +67,7 @@ namespace ProyectoAplicacionFotos.Fotos
 
         }
 
-        public Boolean Eliminar_Fotos(int pID)
+        public Boolean Eliminar_Etiquetas(int pID)
         {
             try
             {
@@ -88,9 +77,9 @@ namespace ProyectoAplicacionFotos.Fotos
                 SqlCommand coneccion = new SqlCommand();
                 coneccion.Connection = conectado;
                 coneccion.CommandType = CommandType.StoredProcedure;
-                coneccion.CommandText = "EliminarFotos"; //Nombre de Nuestro Procedimiento Almacenado
+                coneccion.CommandText = "EliminarEtiqueta"; //Nombre de Nuestro Procedimiento Almacenado
                 coneccion.CommandTimeout = 10;
-                coneccion.Parameters.AddWithValue("@id", pID);
+                coneccion.Parameters.AddWithValue("@ID", pID);
                 coneccion.ExecuteNonQuery();
                 conectado.Close();
                 return true;
@@ -102,7 +91,7 @@ namespace ProyectoAplicacionFotos.Fotos
             }
         }
 
-        public Boolean Agregar_Fotos(int pID, String pURL, String pNombreArchivo, String pTipoArchivo, int pTamaño, String pResolucion, String pTipoFoto)
+        public Boolean Agregar_Etiquetas(int pID, String pNombreEtiqueta, String pTotalFotos, String pSugerencias, int pCodigoFotos)
         {
             try
             {
@@ -112,15 +101,14 @@ namespace ProyectoAplicacionFotos.Fotos
                 SqlCommand coneccion = new SqlCommand();
                 coneccion.Connection = conectado;
                 coneccion.CommandType = CommandType.StoredProcedure;
-                coneccion.CommandText = "AgregarFotos"; //Nombre de Nuestro Procedimiento Almacenado
+                coneccion.CommandText = "AgregarEtiquetas"; //Nombre de Nuestro Procedimiento Almacenado
                 coneccion.CommandTimeout = 10;
                 coneccion.Parameters.AddWithValue("@ID", pID);
-                coneccion.Parameters.AddWithValue("@URL", pURL);
-                coneccion.Parameters.AddWithValue("@NombreArchivo", pNombreArchivo);
-                coneccion.Parameters.AddWithValue("@TipoArchivo", pTipoArchivo);
-                coneccion.Parameters.AddWithValue("@Tamaño", pTamaño);
-                coneccion.Parameters.AddWithValue("@Resolucion", pResolucion);
-                coneccion.Parameters.AddWithValue("@TipoFoto", pTipoFoto);
+                //coneccion.Parameters.AddWithValue("@CodigoFotos", pCodigoFotos);
+                coneccion.Parameters.AddWithValue("@NombreEtiqueta", pNombreEtiqueta);
+                coneccion.Parameters.AddWithValue("@TotalFotos", pTotalFotos);
+                coneccion.Parameters.AddWithValue("@Sugerencias", pSugerencias);
+                coneccion.Parameters.AddWithValue("@CodigoFotos", pCodigoFotos); // Ponerlo en el orden suyo en este caso va de segundo
                 coneccion.ExecuteNonQuery();
                 conectado.Close();
                 return true;
