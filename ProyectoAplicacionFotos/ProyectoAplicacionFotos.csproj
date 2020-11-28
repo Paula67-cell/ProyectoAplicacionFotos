@@ -200,6 +200,7 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Etiquetas\Class_Etiquetas.cs" />
     <Compile Include="Fotos\Class_Fotos.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
