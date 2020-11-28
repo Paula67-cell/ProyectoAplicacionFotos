@@ -32,7 +32,7 @@ namespace ProyectoAplicacionFotos.Fotos
             }
             catch (Exception Ex)
             {
-                MessageBox.Show(Ex.Message);
+                MessageBox.Show("Error al mostrar");
             }
             return dataTable;
 
@@ -64,7 +64,7 @@ namespace ProyectoAplicacionFotos.Fotos
             }
             catch (Exception Ex)
             {
-                MessageBox.Show(Ex.Message);
+                MessageBox.Show("Error al modificar");
                 return false;
             }
 
@@ -90,7 +90,7 @@ namespace ProyectoAplicacionFotos.Fotos
             }
             catch (Exception Ex)
             {
-                MessageBox.Show(Ex.Message);
+                MessageBox.Show("Error al eliminar");
                 return false;
             }
         }
@@ -120,7 +120,7 @@ namespace ProyectoAplicacionFotos.Fotos
             }
             catch (Exception Ex)
             {
-                MessageBox.Show(Ex.Message);
+                MessageBox.Show("Error al Registrar");
                 return false;
             }
 

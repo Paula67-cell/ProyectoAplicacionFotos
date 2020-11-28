@@ -39,9 +39,15 @@ namespace ProyectoAplicacionFotos.WEBForms
                     MessageBox.Show("No puede guardar espacios en blanco");
                 }
 
-           
-            
-           
+            this.TxtNombre.Text = " ";
+            this.TxtResolucion.Text = " ";
+            this.TxtTamaño.Text = " ";
+            this.TxtId.Text = " ";
+            this.TxtTipo.Text = " ";
+            this.TxtURL.Text = " ";
+
+
+
         }
 
         protected void BtnActualizar_Click(object sender, EventArgs e)
@@ -58,6 +64,13 @@ namespace ProyectoAplicacionFotos.WEBForms
                 MessageBox.Show("No puede guardar espacios en blanco");
             }
 
+            this.TxtNombre.Text = " ";
+            this.TxtResolucion.Text = " ";
+            this.TxtTamaño.Text = " ";
+            this.TxtId.Text = " ";
+            this.TxtTipo.Text = " ";
+            this.TxtURL.Text = " ";
+
            
         }
 
@@ -67,6 +80,10 @@ namespace ProyectoAplicacionFotos.WEBForms
             {
                 MessageBox.Show("Datos Eliminados");
             }
+
+            
+            this.TxtId.Text = " ";
+            
 
 
         }
