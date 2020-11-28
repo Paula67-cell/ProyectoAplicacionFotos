@@ -26,7 +26,7 @@ namespace ProyectoAplicacionFotos.WEBForms
         {
          
             
-                if (TxtId.Text.Length > 0 && TxtURL.Text.Length > 0 && TxtNombre.Text.Length > 0 && TxtTipo.Text.Length > 0 && TxtTamaño.Text.Length > 0 && TxtResolucion.Text.Length > 0 && TxtTipoFoto.Text.Length > 0)
+                if ( this.TxtId .Text .Length >0 && TxtURL.Text.Length > 0 && TxtNombre.Text.Length > 0 && TxtTipo.Text.Length > 0 && TxtTamaño.Text.Length > 0 && TxtResolucion.Text.Length > 0 && TxtTipoFoto.Text.Length > 0)
                 {
                     if (cCLS_Fotos.Agregar_Fotos(Convert.ToInt32(TxtId.Text), TxtURL.Text, TxtNombre.Text, TxtTipo.Text, Convert.ToInt32(TxtTamaño.Text), TxtResolucion.Text, TxtTipoFoto.Text))
                     {
@@ -75,13 +75,22 @@ namespace ProyectoAplicacionFotos.WEBForms
         }
 
         protected void BtnEliminar_Click(object sender, EventArgs e)
+            
         {
-            if (cCLS_Fotos.Eliminar_Fotos(Convert.ToInt32(TxtId.Text)))
+            if (this.TxtId .Text .Length > 0)
             {
-                MessageBox.Show("Datos Eliminados");
+                if (cCLS_Fotos.Eliminar_Fotos(Convert.ToInt32(TxtId.Text)))
+                {
+                    MessageBox.Show("Datos Eliminados");
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Ingrese el ID que desea eliminar");
             }
 
-            
+
             this.TxtId.Text = " ";
             
 

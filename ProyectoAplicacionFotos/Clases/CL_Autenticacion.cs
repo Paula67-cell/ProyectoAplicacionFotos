@@ -14,6 +14,7 @@ namespace ProyectoAplicacionFotos
 
     {
         private DataTable dataTable = new DataTable();
+        
 
         DataSet ds = new DataSet();
         public Boolean  Usuario(string pNombreUsuario, string pPassword, string pEmail)

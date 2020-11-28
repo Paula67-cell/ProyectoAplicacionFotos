@@ -72,7 +72,7 @@
             height: 114px;
         }
         .auto-style39 {
-            margin-left: 562px;
+            margin-left: 423px;
         }
         .auto-style40 {
             width: 485px;
@@ -91,6 +91,9 @@
         .auto-style46 {
             height: 144px;
         }
+        .auto-style47 {
+            margin-left: 306px;
+        }
     </style>
 </head>
 <body>
@@ -102,16 +105,9 @@
                 <tr>
                     <td class="auto-style40" style="font-family: 'Arial Narrow'; font-size: 16px; font-style: oblique; background-color: #FF99FF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ID</td>
                     <td class="auto-style41" style="font-family: 'Arial Narrow'; font-size: 16px; font-style: oblique; background-color: #FF66FF;">
-                        <asp:TextBox ID="TextBox6" runat="server" BorderColor="#FF3399" BorderStyle="Double" CssClass="auto-style9" Width="167px"></asp:TextBox>
+                        <asp:TextBox ID="TXTID" runat="server" BorderColor="#FF3399" BorderStyle="Double" CssClass="auto-style9" Width="167px"></asp:TextBox>
                     </td>
                     <td class="auto-style42" style="font-family: 'Arial Narrow'; font-size: 16px; font-style: oblique; background-color: #FF99FF;"> </td>
-                </tr>
-                <tr>
-                    <td class="auto-style40" style="font-family: 'Arial Narrow'; font-size: 16px; font-style: oblique; background-color: #FF99FF;">Codigo Etiqueta</td>
-                    <td class="auto-style41" style="font-family: 'Arial Narrow'; font-size: 16px; font-style: oblique; background-color: #FF66FF;">
-                        <asp:TextBox ID="TXTCodigoEtiqueta" runat="server" BorderColor="#FF3399" BorderStyle="Double" CssClass="auto-style9" Width="167px"></asp:TextBox>
-                    </td>
-                    <td class="auto-style42" style="font-family: 'Arial Narrow'; font-size: 16px; font-style: oblique; background-color: #FF99FF;">&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style16" style="font-family: 'Arial Narrow'; font-size: 16px; font-style: oblique; background-color: #FF99FF;">&nbsp;&nbsp;&nbsp; Nombre Etiquetas</td>
@@ -122,13 +118,13 @@
                 </tr>
                 <tr>
                     <td class="auto-style36">
-                        <asp:TextBox ID="TextBox4" runat="server" BorderColor="#FF3399" BorderStyle="Double" CssClass="auto-style10" Width="207px"></asp:TextBox>
+                        <asp:TextBox ID="TxtNombreEti" runat="server" BorderColor="#FF3399" BorderStyle="Double" CssClass="auto-style10" Width="207px"></asp:TextBox>
                     </td>
                     <td class="auto-style37">
-                        <asp:TextBox ID="TextBox2" runat="server" BorderColor="#FF3399" BorderStyle="Double" CssClass="auto-style9" Width="167px"></asp:TextBox>
+                        <asp:TextBox ID="TxtCantidad" runat="server" BorderColor="#FF3399" BorderStyle="Double" CssClass="auto-style9" Width="167px"></asp:TextBox>
                     </td>
                     <td class="auto-style38">
-                        <asp:TextBox ID="TextBox5" runat="server" BorderColor="#FF3399" BorderStyle="Double" CssClass="auto-style22" Width="167px"></asp:TextBox>
+                        <asp:TextBox ID="TxtUsuarioSistema" runat="server" BorderColor="#FF3399" BorderStyle="Double" CssClass="auto-style22" Width="167px"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -148,10 +144,10 @@
                         <asp:Button ID="BTNregistrar" runat="server" BorderColor="#FF0066" BorderStyle="Inset" Text="Registrar" Width="119px" OnClick="Button1_Click" />
                     </td>
                     <td class="auto-style31">
-                        <asp:Button ID="BTNElimar" runat="server" BorderColor="#FF0066" BorderStyle="Double" CssClass="auto-style43" Text="Eliminar" Width="140px" />
+                        <asp:Button ID="BTNElimar" runat="server" BorderColor="#FF0066" BorderStyle="Double" CssClass="auto-style43" Text="Eliminar" Width="140px" OnClick="BTNElimar_Click" />
                     </td>
                     <td class="auto-style32">
-                        <asp:Button ID="BTNActualizar" runat="server" BorderColor="#FF0066" BorderStyle="Inset" CssClass="auto-style26" Text="Actualizar" Width="118px" />
+                        <asp:Button ID="BTNActualizar" runat="server" BorderColor="#FF0066" BorderStyle="Inset" CssClass="auto-style26" Text="Actualizar" Width="118px" OnClick="BTNActualizar_Click" />
                     </td>
                 </tr>
                 <tr>
@@ -162,8 +158,9 @@
                 </tr>
                 <tr>
                     <td colspan="3">
-                        <asp:Button ID="Mostrar" runat="server" BorderColor="#FF0066" BorderStyle="Double" CssClass="auto-style10" Text="Mostrar" Width="109px" />
-                        <asp:Image ID="Image2" runat="server" CssClass="auto-style39" Height="147px" ImageUrl="~/Imagenes/etiqueta.png" Width="170px" />
+                        <asp:Button ID="Mostrar" runat="server" BorderColor="#FF0066" BorderStyle="Double" CssClass="auto-style10" Text="Mostrar" Width="109px" OnClick="Mostrar_Click" />
+                        <asp:Image ID="Image2" runat="server" CssClass="auto-style39" Height="95px" ImageUrl="~/Imagenes/etiqueta.png" Width="117px" />
+                        <asp:Button ID="BTNAtras" runat="server" BorderColor="#FF0066" BorderStyle="Groove" CssClass="auto-style47" OnClick="BTNAtras_Click" Text="Regresar" Width="118px" />
                     </td>
                 </tr>
             </table>

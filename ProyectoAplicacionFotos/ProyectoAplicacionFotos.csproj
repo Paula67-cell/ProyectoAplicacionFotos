@@ -184,6 +184,7 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Clase_Etiqueta.cs" />
     <Compile Include="Clases\CL_Autenticacion.cs" />
     <Compile Include="Clases\Conexion.cs" />
     <Compile Include="Contact.aspx.cs">
@@ -200,7 +201,6 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Etiquetas\Class_Etiquetas.cs" />
     <Compile Include="Fotos\Class_Fotos.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -251,6 +251,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Etiquetas\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
