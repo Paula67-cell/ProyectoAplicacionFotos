@@ -145,13 +145,13 @@
                 </tr>
                 <tr>
                     <td class="auto-style30">
-                        <asp:Button ID="Button1" runat="server" BorderColor="#FF0066" BorderStyle="Inset" Text="Registrar" Width="119px" />
+                        <asp:Button ID="BTNregistrar" runat="server" BorderColor="#FF0066" BorderStyle="Inset" Text="Registrar" Width="119px" OnClick="Button1_Click" />
                     </td>
                     <td class="auto-style31">
-                        <asp:Button ID="Button3" runat="server" BorderColor="#FF0066" BorderStyle="Double" CssClass="auto-style43" Text="Eliminar" Width="140px" />
+                        <asp:Button ID="BTNElimar" runat="server" BorderColor="#FF0066" BorderStyle="Double" CssClass="auto-style43" Text="Eliminar" Width="140px" />
                     </td>
                     <td class="auto-style32">
-                        <asp:Button ID="Button2" runat="server" BorderColor="#FF0066" BorderStyle="Inset" CssClass="auto-style26" Text="Actualizar" Width="118px" />
+                        <asp:Button ID="BTNActualizar" runat="server" BorderColor="#FF0066" BorderStyle="Inset" CssClass="auto-style26" Text="Actualizar" Width="118px" />
                     </td>
                 </tr>
                 <tr>

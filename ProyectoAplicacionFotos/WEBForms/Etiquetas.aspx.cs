@@ -19,5 +19,10 @@ namespace ProyectoAplicacionFotos.WEBForms
             this.LabelEtiquetas .Visible = true;
             this.Image1.Visible = true;
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
