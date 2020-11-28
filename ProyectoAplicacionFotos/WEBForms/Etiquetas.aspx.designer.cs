@@ -33,49 +33,49 @@ namespace ProyectoAplicacionFotos.WEBForms
         protected global::System.Web.UI.WebControls.Panel Panel1;
 
         /// <summary>
-        /// Control TxtId.
+        /// Control TextBox6.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtId;
+        protected global::System.Web.UI.WebControls.TextBox TextBox6;
 
         /// <summary>
-        /// Control TxtCodigo.
+        /// Control TXTCodigoEtiqueta.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtCodigo;
+        protected global::System.Web.UI.WebControls.TextBox TXTCodigoEtiqueta;
 
         /// <summary>
-        /// Control TxtNombre.
+        /// Control TextBox4.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtNombre;
+        protected global::System.Web.UI.WebControls.TextBox TextBox4;
 
         /// <summary>
-        /// Control TxtTotal.
+        /// Control TextBox2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtTotal;
+        protected global::System.Web.UI.WebControls.TextBox TextBox2;
 
         /// <summary>
-        /// Control txtUS.
+        /// Control TextBox5.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtUS;
+        protected global::System.Web.UI.WebControls.TextBox TextBox5;
 
         /// <summary>
         /// Control BTNSugerencias.
@@ -105,31 +105,31 @@ namespace ProyectoAplicacionFotos.WEBForms
         protected global::System.Web.UI.WebControls.Image Image1;
 
         /// <summary>
-        /// Control BtnRegistrar.
+        /// Control BTNregistrar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnRegistrar;
+        protected global::System.Web.UI.WebControls.Button BTNregistrar;
 
         /// <summary>
-        /// Control BtnEliminar.
+        /// Control BTNElimar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnEliminar;
+        protected global::System.Web.UI.WebControls.Button BTNElimar;
 
         /// <summary>
-        /// Control BtnActualizar.
+        /// Control BTNActualizar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnActualizar;
+        protected global::System.Web.UI.WebControls.Button BTNActualizar;
 
         /// <summary>
         /// Control GridView1.
@@ -141,13 +141,13 @@ namespace ProyectoAplicacionFotos.WEBForms
         protected global::System.Web.UI.WebControls.GridView GridView1;
 
         /// <summary>
-        /// Control BtnMostrar.
+        /// Control Mostrar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnMostrar;
+        protected global::System.Web.UI.WebControls.Button Mostrar;
 
         /// <summary>
         /// Control Image2.

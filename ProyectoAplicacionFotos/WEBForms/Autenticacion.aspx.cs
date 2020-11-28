@@ -32,10 +32,12 @@ namespace ProyectoAplicacionFotos.WEBForms
                 MessageBox.Show("No puede guardar espacios en blancos");
 
             }
-            
-            
-            
 
+
+
+            this.TXTEmail.Text = " ";
+            this.TXTPassword.Text  = " ";
+            this.TXTUsuario.Text = " ";
         }
         
 

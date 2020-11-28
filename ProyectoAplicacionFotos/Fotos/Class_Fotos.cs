@@ -25,21 +25,14 @@ namespace ProyectoAplicacionFotos.Fotos
                 //coneccion.CommandType = System.Data.CommandType.StoredProcedure;
                 coneccion.CommandType = CommandType.StoredProcedure;
                 coneccion.CommandText = "MostrarFotos";
-                //coneccion.CommandTimeout = 10;
-                //coneccion.Parameters.AddWithValue("@ID", pID);
-                //coneccion.Parameters.AddWithValue("@URL", pURL);
-                //coneccion.Parameters.AddWithValue("@NombreArchivo", pNombreArchivo);
-                //coneccion.Parameters.AddWithValue("@TipoArchivo", pTipoArchivo);
-                //coneccion.Parameters.AddWithValue("@Tamaño", pTamaño);
-                //coneccion.Parameters.AddWithValue("@Resolucion", pResolucion);
-                //coneccion.Parameters.AddWithValue("@TipoFoto", pTipoFoto);
+               
                 adapter = new SqlDataAdapter(coneccion);
                 adapter.Fill(dataTable);
                 conectado.Close();
             }
             catch (Exception Ex)
             {
-                MessageBox.Show(Ex.Message);
+                MessageBox.Show("Error al mostrar");
             }
             return dataTable;
 
@@ -71,7 +64,7 @@ namespace ProyectoAplicacionFotos.Fotos
             }
             catch (Exception Ex)
             {
-                MessageBox.Show(Ex.Message);
+                MessageBox.Show("Error al modificar");
                 return false;
             }
 
@@ -97,7 +90,7 @@ namespace ProyectoAplicacionFotos.Fotos
             }
             catch (Exception Ex)
             {
-                MessageBox.Show(Ex.Message);
+                MessageBox.Show("Error al eliminar");
                 return false;
             }
         }
@@ -127,7 +120,7 @@ namespace ProyectoAplicacionFotos.Fotos
             }
             catch (Exception Ex)
             {
-                MessageBox.Show(Ex.Message);
+                MessageBox.Show("Error al Registrar");
                 return false;
             }
 
